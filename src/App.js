@@ -15,7 +15,7 @@ function App() {
       )
     ).json(); 
     setMovies(json.data.movies); //json 에 있는 영화 데이터를 setMovies를 통해 movies에 넣기
-    setLoading(false); // 데이터를 가져오면 로딩이 끝났으니 false로 바꾸기
+    setLoading(false); 
   };
   useEffect(()=>{ // useEffect를 통해 처음 시작할때만 영화 데이터 호출
     getMovies();
