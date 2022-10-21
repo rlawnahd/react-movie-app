@@ -1,13 +1,10 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Detail from './routes/Detail';
-import Home from "./routes/Home";
+import Home from './routes/Home';
+import Button from './components/Button';
+
 function App() {
-  
-  return(
+  return (
     <Router>
       <Switch>
         <Route path="/movie/:id">
@@ -15,7 +12,9 @@ function App() {
         </Route>
         <Route path="/">
           <Home></Home>
-
+        </Route>
+        <Route path="/">
+          <Button></Button>
         </Route>
       </Switch>
     </Router>
